@@ -3,20 +3,14 @@
 	background-color: green;
 	text-align: center;
 	font-size: 100px;
-	margin: 20px;
-	min-width: 28%;
+	margin: 10px;
+	flex: 0 1 calc(33.33% - 20px);
 }
 
 .container {
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: center;
-}
-
-.wrapper{
-	display: flex;
-	justify-content: space-around;
+	justify-content: flex-start;
 }
 
 
@@ -24,11 +18,10 @@
 
 	.container {
 		flex-wrap: wrap;
-		flex-grow: 1;
 	}
 
 	.box {
-		flex: 1 0 40%;
+		flex: 0 0 calc(50% - 20px);
 	}
 }
 
@@ -36,6 +29,7 @@
 
 	.container {
 		flex-wrap: wrap;
+		justify-content:space-around;
 	}
 
 	.box {
